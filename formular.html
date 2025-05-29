@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KupovinaKarata</title>
+<style>
+#sifra2{
+    color: transparent;
+}
+
+.forma{
+
+     width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url();
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(86, 166, 205, 0.1);
+}
+.forma button{
+  background-color: #53cb57;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.forma input,
+.forma button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .responsive-form {
+    padding: 15px;
+  }
+
+  .responsive-form input,
+  .responsive-form button {
+    padding: 10px;
+  }
+}
+</style>
+
+
+
+</head>
+<body>
+    <div>
+    <form class="forma">
+     
+Pol*: <input id="pol" type="radio" required name="pol" value="muški">Muški
+      <input id="pol" type="radio" name="pol" value="muški">Ženski
+     <br><br>
+
+
+
+
+
+<br>
+ <input type="checkbox" name="potvrda" value="potvrda"> Slažem se sa uslovima privatnosti
+
+<br><br>
+
+Uzrast*:<select name="uzrast">
+    <option value="deca do 8 godina">Deca do 12 godina</option>
+    <option value="deca uzrasta od 12 do 18">Deca uzrasta od 12 do 18</option>
+    <option value="odrasli">Odrasli</option>
+</select>
+<br><br>
+<input type="submit" value="Izvrši transakciju!">
+<input type="reset" value="Odustani!">
+
+
+
+
+
+
+
+
+    </form></div>
+</body>
+</html>

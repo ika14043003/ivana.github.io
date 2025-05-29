@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delfinarijum</title>
+    <!-- <link rel="stylesheet" href="./stil.css" type="text/css"> -->
+
+<style>
+   @font-face {
+    font-family: mojfont;
+    src: url(./ShadowsIntoLight-Regular.ttf);
+}   
+
+  span{
+    color: rgb(0, 8, 255);
+  }
+    body{
+        background-color: beige ;
+    }
+    dt{
+        font-style: italic;
+        color: rgb(151, 101, 9);
+        font-weight: bold;
+    }
+   
+    header{
+
+    background-image: url(./konacna.jpg);
+    background-size: cover;        /* popuni ceo heder */
+    background-position: center;   /* centriraj sliku */
+    background-repeat: no-repeat;  /* ne ponavljaj sliku */
+    height: 300px;
+    width: 100vw;
+    position: relative;
+
+    }
+ 
+    nav{
+    background-color: rgba(153, 153, 17, 0.442);
+    }
+h1{
+    color: orange;
+    font-family: mojfont;
+    text-align: center;
+}
+.najnovije-vesti {
+    background-color: #98d1e1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+}
+#logo{
+    border-radius: 50%;
+    border-color : orange;
+    border-style: dotted;
+    border-width: 10px;
+    align-items: flex-start;
+}
+.zanimljivo{
+   text-align: center;
+   align-items: normal;
+   position: relative;
+}
+.slike{
+   
+   display: flex;
+  justify-content: center; 
+  align-items: center;  
+  height: 100hv;           
+  margin: 0; 
+
+}
+.img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+</style>
+
+</head>
+<body>
+    <header>
+    
+        <img id="logo"
+        src="./logo.jpg" alt="delfin">
+        <div>
+            <h1 style="text-align: left; font-weight: bold; color: rgb(238, 161, 19); font-family: mojfont;">Delfinarijum</h1>
+        </div>
+
+    </header>
+    
+    <main>
+<nav>
+
+    <ul style="display: flex; gap: 40px; list-style-image: url(./icons8-dolphin-30.png) ;">
+       
+        <li><a href="#naslov1">Ko smo mi?</a></li>
+        <li><a href="#naslov2" >Gde se nalazimo?</a></li>
+        <li><a href="./kalendar.html">Kalendar aktivnosti</a></li>
+        <li><a href="#zanimljivosti">Zanimljivosti</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="./formular.html">Kupi kartu</a></a></li>
+        <li><a href="./animacija.html">Animacija</a></li>
+     
+    </ul>
+</nav>
+
+
+
+    </main>
+    
+   <div class="najnovije-vesti" ><h2 style="text-shadow:  10px 20px 2px rgb(38, 11, 213); color: rgb(13, 13, 156);">Najnovije vesti</h2>
+
+    <div class="vest">
+      <h3> U Peruu pronađen fosil rečnog delfina- živeo u Amazonu pre 16 miliona godina!</h3>
+        <p><a href="https://n1info.rs/magazin/scitech/u-peruu-pronadjen-fosil-recnog-delfina-star-16-miliona-godina/">Pročitaj više</a></p>
+    
+    </div>
+
+    <div class="vest">
+        <h3>Iskoristite rođendanski popust za kupovinu karata! </h3>
+        <p><a href="./formular.html"><img src="./icons8-shopping-bag-100.png" alt="Soping korpa"></a></p>
+       
+    </div>
+    <div class="vest">
+        <h3>Rodjendanska žurka</h3>
+        <p>Juce smo našem najmlađem članu parka prolsavili prvi rođendan!<br>
+            <a href="./slike.html">Vidi slike</a></p>
+    </div>
+</div>
+
+
+
+<hr style="color: blue; margin: 10px 10px;">
+
+
+    <h1 id="naslov1">Ko smo mi?</h1>
+    <p>Delfinarijum je jedini park u regionu koji nudi zabavan i rekreativan sadržaj koji uključuje delfine. Da dobri ste čuli, delfine. Ovaj park predstavlja spoj zabave, druženja, igre ali i sticanja novih znanja o delfinima. Akva park ima i 7 bazena, bazen sa talasima kao i bazene različitih dubina prilagođene deci i odraslima, možete igrati vodeni fudbal u bazenima i zabavljati se sa prijateljima ili drugim posetiocima, bandži jumping sa visine od 70 metara, dečije bazene, rafting sa 300 metara visinske razlike sa veštačkim talasima, gde ćete doživeti neverovatnu vožnju i rafting sve u okviru ovog akva parka. Takođe ima i terasu za uživanje u suncu i pogledu na more i obalu Rovinja, gde se možete odmoriti od zabave.  Vodeni park ima kapacitet od 2000 ljudi dnevno koliko može da primi i obuhvata povrsinu od 6500m2. UKoliko volite delfine, zabavu, igru i druženje onda je Delfinarijum pravo mesto za vas.</p>
+   <div class="slike">
+    <img class="img"  width="800px" height="400px" src="./delfinPark.jpg" alt="Nas park"></div>
+    <hr style="color: blue; margin: 10px 10px;">
+    <h1 id="naslov2">Gde se nalazimo?</h1>
+    <p>Nalazimo se 56km istočno od Rovinja, u uvali Jadranskog mora. Ovde možete videti detaljniju lokaciju.<br></p>
+    <div class="slike">
+ <a href="https://www.google.com/maps/search/ulica+brace+bajkovic++rovinj/@45.0751413,13.5832389,12z/data=!3m1!4b1?hl=sr&entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D"><img class="img" 
+      class="slike" style=" box-shadow: 20px 20px 20px rgb(72, 164, 221);"  width="400" height="300"
+ src="./mapa.png" alt="mapa"></a><img width="20%" style="position: absolute;" src="./mis.png!bw700" alt="Klik za lokaciju"></div>
+ <br><br>
+<hr style="color: blue; margin: 10px 10px;">
+    <br>
+    
+<div class="zanimljivo">
+
+  <h1 id="zanimljivosti">Zanimljivosti</h1>
+<dl>
+    <dt>Delfini su veoma inteligentni</dt>
+    <dd>Imaju veliki mozak u odnosu na veličinu tela, pokazuju emocije i koriste složen sistem komunikacije </dd>
+    
+    <dt>Imaju “sonar” – eholokaciju</dt>
+    <dd>Delfini koriste eholokaciju za navigaciju i lov.</dd>
+
+    <dt>Prepoznaju se u ogledalu</dt>
+    <dd>Delfini su jedni od retkih životinja koje prepoznaju sebe u ogledalu – pokazatelj samoprepoznavanja i inteligencije.</dd>
+
+    <dt>Ne spavaju kao mi</dt>
+    <dd>Delfini ne spavaju potpuno — pola mozga im spava, dok druga polovina ostaje budna da bi disali i pazili na opasnosti.</dd>
+
+    <dt>Imaju različite “dijalekte”</dt>
+    <dd>Delfini iz različitih područja zvuče drugačije – poput ljudskih jezika i akcenata!</dd>
+
+    <dt> Rađaju se sa zubima, ali ih ne koriste za žvakanje</dt>
+    <dd>Delfini imaju 80–100 zuba, ali njima samo hvataju plen, a gutaju ga celog.
+
+    <dt> Neke vrste delfina žive u rekama</dt>
+    <dd>Nisu svi delfini morski — npr. rečni delfin iz Amazona (boto) živi u slatkoj vodi!
+        <br><br>
+<figure>
+<img width="500px" height="300px" src="./rozeKonacna.avif" alt="Recni delfin">
+<figcaption><span style="font-style: italic;">Slika 1: </span>Amazonski rečni delfin ružičaste boje</figcaption>
+
+</figure>
+</div>
+
+
+
+
+</dd>
+
+
+</dl>
+
+
+<hr style="color: blue; margin: 10px 10px;">
+
+<footer style="border: dotted; border-color: rgb(255, 187, 0); border-radius: 10%; border-width: 5px;">
+    <h1 id="kontakt">Kontakt podaci</h1>
+    <ul>
+        <li style="list-style-image: url(./icons8-call-24.png);">Broj telefona:<span style="color: rgb(156, 35, 128);"> +381/62-768-18-45</span></li>
+        <li style="list-style-image: url(./icons8-location-24.png);">Adresa: <span style="color: rgb(156, 35, 128);">Ul. Braće Brajković 1456</span></li>
+        <li style="list-style-image: url(./icons8-mail-24.png);">Mail adresa: <span style="color: rgb(156, 35, 128);">delfiniarijum@gmail.com</span></li>
+        
+    </ul>
+</footer>
+</body>
+</html>
