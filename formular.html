@@ -1,87 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KupovinaKarata</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KupovinaKarata</title>
 <style>
-#sifra2{
-    color: transparent;
-}
+     *{
+            box-sizing: border-box;
+            padding:0;
+            margin: 0
+     }  
+ body {
+            display: flex;
+            justify-content: center;  
+            align-items: center;      
+            min-height: 100vh;       
+            background-color: #8c9fb0;
+            font-family: Arial, sans-serif;
+        }
+         
+.forma {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #a4cee8;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+         .gender-group {
+            display: flex;
+            align-items: first baseline;
+            gap: 10px;
+        }
 
-.forma{
+        .gender-group label {
+            display: inline-flex;
+            align-items:first baseline;
+            gap: 5px;
+        }
 
-     width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-image: url();
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(86, 166, 205, 0.1);
-}
-.forma button{
-  background-color: #53cb57;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-.forma input,
-.forma button {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+   h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+  
+label {
+            font-size: 15px;
+            color: #34495e;
+        }
+
+ 
+        input, select, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+
+        button {
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    
 @media (max-width: 600px) {
-  .responsive-form {
-    padding: 15px;
-  }
+            .gender-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
 
-  .responsive-form input,
-  .responsive-form button {
-    padding: 10px;
-  }
-}
-</style>
+
+  </style>
+
+
 
 
 
 </head>
 <body>
-    <div>
-    <form class="forma">
-     
-Pol*: <input id="pol" type="radio" required name="pol" value="muški">Muški
-      <input id="pol" type="radio" name="pol" value="muški">Ženski
-     <br><br>
+
+<div class="forma">
+ <h1>Kupovina Karata</h1> 
+
+<form>  
+ 
+<label for="ImePrez">Ime i Prezime</label>
+<input type="text" id="imePrez" name="imePrezime" required placeholder="Unesite vaše ime i prezime">
+<br><br><br>
+<label for="email">Email adresa</label>
+<input type="email" name="email" id="email"required placeholder="Unesite email adresu">
+<br><br><br>
+
+ 
+        <label for="gender">Pol:</label><br>
+        <div class="gender-group"><br>
+            <label>
+                <input type="radio" name="gender" value="male" required>
+                Muško
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" required>
+                Žensko
+            </label>
+                <br></div>
+  <label for="karte">Broj karata</label>
+        <select id="tickets" name="tickets" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br><br>
+
+        <label for="uzrast">Koliko godina imate?</label>
+        <select id="godine" name="godine" required>
+            <option value="1">manje od 12 godina</option>
+            <option value="2">12-18</option>
+            <option value="3">vise od 18 godina</option>
+        </select>
+        <br><br><br>
+        <label for="Komentar">Napomena</label>
+        <textarea id="komentar" name="comments" rows="4" placeholder="Unesite dodatne informacije (opciono)"></textarea>
+<br><br><br>  <button type="submit">Kupi karte</button>
+  <button type="otkazi">Odustani</button>
+
+</div>
+      </form>
 
 
-
-
-
-<br>
- <input type="checkbox" name="potvrda" value="potvrda"> Slažem se sa uslovima privatnosti
-
-<br><br>
-
-Uzrast*:<select name="uzrast">
-    <option value="deca do 8 godina">Deca do 12 godina</option>
-    <option value="deca uzrasta od 12 do 18">Deca uzrasta od 12 do 18</option>
-    <option value="odrasli">Odrasli</option>
-</select>
-<br><br>
-<input type="submit" value="Izvrši transakciju!">
-<input type="reset" value="Odustani!">
-
-
-
-
-
-
-
-
-    </form></div>
 </body>
 </html>
